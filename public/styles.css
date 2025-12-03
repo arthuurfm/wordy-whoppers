@@ -3,16 +3,22 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #772929;
+  background-color: #2d3142;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   color: #ddd;
   font-family: 'Jost', sans-serif;
+}
+
+body::selection {
+  background-color: #ddd;
+  color: #511c1c;
 }
 
 .container {
@@ -22,6 +28,7 @@ body {
   margin-left: 3%;
   border: 5px solid #511c1c;
   border-radius: 20px;
+  background-color: #04151f;
 
   display: flex;
   flex-direction: column;
@@ -58,14 +65,82 @@ main {
   width: 60%;
   height: 100%;
   border-radius: inherit;
-  background-color: #511c1c;
+  background-color: #2d3142;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 8px solid #000;
 }
 
 .nickname {
+  justify-content: center;
+  gap: 16px;
+}
+
+.nickname input {
+  padding: 12px 18px;
+  font-size: 24px;
+  font-family: 'Jost', sans-serif;
+  color: #ddd;
+  outline: none;
+  background-color: #772929;
+  border: 2px solid #aaa;
+  border-radius: inherit;
+}
+
+.nickname input::placeholder {
+  color: #aaa;
+}
+
+.nickname input:focus {
+  background-color: #511c1c;
+  border-color: #ddd;
+}
+
+.nickname .buttons {
+  display: flex;
+  gap: 12px;
+  border-radius: inherit;
+}
+
+.nickname button {
+  padding: 12px;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: inherit;
+  border: none;
+  background-color: #ef8354;
+  cursor: pointer;
+  border-bottom: 4px solid #000;
+}
+
+.nickname button:hover {
+  background-color: #e3a85f;
+}
+
+.nickname button:last-child {
+  background-color: #5fa0a3;
+}
+
+.nickname button:last-child:hover {
+  background-color: #72c2c6;
+}
+
+.nickname button::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  background-image: url('./img/play-button.png');
+  background-size: cover;
+}
+
+.nickname button:last-child::before {
+  background-image: url('./img/house-door.png');
 }
 
 .rules {
