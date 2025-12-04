@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('./components/buttons/styles.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,17 +9,17 @@
 }
 
 body {
-  background-color: #2d3142;
+  background-color: #eb5e28;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
-  color: #ddd;
+  color: #fffcf2;
   font-family: 'Jost', sans-serif;
 }
 
 body::selection {
-  background-color: #ddd;
+  background-color: #fffcf2;
   color: #511c1c;
 }
 
@@ -26,9 +28,9 @@ body::selection {
   width: 75%;
   height: 90%;
   margin-left: 3%;
-  border: 5px solid #511c1c;
+  border: 5px solid #ccc5b9;
   border-radius: 20px;
-  background-color: #04151f;
+  background-color: #403d39;
 
   display: flex;
   flex-direction: column;
@@ -65,7 +67,7 @@ main {
   width: 60%;
   height: 100%;
   border-radius: inherit;
-  background-color: #2d3142;
+  background-color: #252422;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,9 +83,9 @@ main {
   padding: 12px 18px;
   font-size: 24px;
   font-family: 'Jost', sans-serif;
-  color: #ddd;
+  color: #fffcf2;
   outline: none;
-  background-color: #772929;
+  background-color: #403d39;
   border: 2px solid #aaa;
   border-radius: inherit;
 }
@@ -93,54 +95,15 @@ main {
 }
 
 .nickname input:focus {
-  background-color: #511c1c;
-  border-color: #ddd;
+  background-color: #252422;
+  border-color: #fffcf2;
 }
 
 .nickname .buttons {
   display: flex;
+  flex-direction: row;
   gap: 12px;
   border-radius: inherit;
-}
-
-.nickname button {
-  padding: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: inherit;
-  border: none;
-  background-color: #ef8354;
-  cursor: pointer;
-  border-bottom: 4px solid #000;
-}
-
-.nickname button:hover {
-  background-color: #e3a85f;
-}
-
-.nickname button:last-child {
-  background-color: #5fa0a3;
-}
-
-.nickname button:last-child:hover {
-  background-color: #72c2c6;
-}
-
-.nickname button::before {
-  content: '';
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  margin-right: 8px;
-  background-image: url('./img/play-button.png');
-  background-size: cover;
-}
-
-.nickname button:last-child::before {
-  background-image: url('./img/house-door.png');
 }
 
 .rules {

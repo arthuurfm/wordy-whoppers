@@ -1,5 +1,9 @@
-const createdRooms = document.getElementById('created-rooms');
+import { createdRoomsBtn, createRoomBtn } from "./components/buttons/index.js";
 
-createdRooms.addEventListener('click', () => {
+const buttonsContainer = document.querySelector('.buttons');
+buttonsContainer.appendChild(createRoomBtn);
+buttonsContainer.appendChild(createdRoomsBtn);
+
+createdRoomsBtn.addEventListener('click', () => {
   window.location.href = './pages/rooms/index.html';
 });

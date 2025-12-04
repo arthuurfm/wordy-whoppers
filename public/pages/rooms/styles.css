@@ -5,18 +5,18 @@
 }
 
 body {
-  background-color: #4f5d75;
+  background-color: #eb5e28;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: #fffcf2;
   font-family: 'Jost', sans-serif;
 }
 
 body::selection {
-  background-color: #efd6ac;
-  color: #04151f;
+  background-color: #fffcf2;
+  color: #403d39;
 }
 
 .container {
@@ -24,9 +24,9 @@ body::selection {
   width: 75%;
   height: 90%;
   margin-left: 3%;
-  border: 3px solid #bfc0c0;
+  border: 3px solid #ccc5b9;
   border-radius: 20px;
-  background-color: #04151f;
+  background-color: #403d39;
 
   display: flex;
   flex-direction: column;
@@ -42,8 +42,8 @@ body::selection {
   width: 75%;
   height: 60%;
   border-radius: inherit;
-  border: 2px solid #bfc0c0;
-  background-color: #2d3142;
+  border-bottom: 8px solid #000;
+  background-color: #252422;
 }
 
 .low-content {
@@ -55,7 +55,7 @@ body::selection {
 .room-info {
   width: 50%;
   height: 100%;
-  background-color: #2d3142;
-  border: 2px solid #bfc0c0;
+  background-color: #252422;
+  border-bottom: 8px solid #000;
   border-radius: inherit;
 }

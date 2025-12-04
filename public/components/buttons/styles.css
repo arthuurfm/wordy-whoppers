@@ -1,0 +1,39 @@
+.nickname button {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: inherit;
+  border: none;
+  background-color: #ef8354;
+  cursor: pointer;
+  border-bottom: 4px solid #000;
+}
+
+#create-room:hover {
+  background-color: #e3a85f;
+}
+
+#created-rooms {
+  background-color: #5fa0a3;
+}
+
+#created-rooms:hover {
+  background-color: #72c2c6;
+}
+
+button::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  background-image: url('../../img/play-button.png');
+  background-size: cover;
+}
+
+#created-rooms::before {
+  background-image: url('../../img/house-door.png');
+}
