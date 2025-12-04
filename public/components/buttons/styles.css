@@ -7,21 +7,21 @@
   font-weight: bold;
   border-radius: inherit;
   border: none;
-  background-color: #ef8354;
+  background-color: #d3c4af;
   cursor: pointer;
   border-bottom: 4px solid #000;
 }
 
 #create-room:hover {
-  background-color: #e3a85f;
+  background-color: #cab596;
 }
 
 #created-rooms {
-  background-color: #5fa0a3;
+  background-color: #c9a66c;
 }
 
 #created-rooms:hover {
-  background-color: #72c2c6;
+  background-color: #c49c5b;
 }
 
 button::before {
